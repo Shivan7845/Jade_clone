@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img6.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 1s infinite;
+    
+}
+@keyframes fade{
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+#jade{
+    width: 100%;
+    z-index: 99;
+}
+/* =============================================================================== */
+
+.nav{
+    width: 100%;
+    height: 15vh;
+    padding: 1vmax 3vmax;
+    background-color: #FEF5EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   position: relative;
+}
+.nav.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.nav-part1 img{
+
+    height: 80px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.nav-part2 ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+
+}
+.nav-part2 span{
+    position: relative;
+    display: inline-block;
+    animation: animate 1s ease-in-out infinite;
+    animation-delay: calc(0.1s *var(--i));
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+
+.nav-part2 li{
+    font: 400 1.8vmax "Right Grotesk";
+    padding: 0 1vmax ;
+    cursor: pointer;
+}
+.nav-part3 img  {
+    height:40px;
+    margin-left: 20px;
+}
+.page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* padding-top: 15vh; */
+
+}
+.p2-left{
+    width: 50%;
+    height: 100vh;
+    padding:  3vmax;
+    background-color:#F7B0E0;
+    cursor: pointer;
+}
+.p2-left h1{
+    font-size: 150px;
+    line-height: 130px;
+    font-family: "Right Grotesk";
+    text-align:center;
+    color: #FF5400;
+    letter-spacing: 5px;
+    transition: all ease 1s;
+}
+.p2-left:hover h1{
+    color:red;
+}
+.p2-left h3{
+    text-align: center;
+    margin-top: 2vmax;
+    font: 100 1.8vmax "right grotesk";
+    color: #FF5400;
+}
+.p2-left:hover h3{
+    color: red;
+}
+.p2-right{
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+   
+}
+.p2r-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0521/2871/0837/files/JadePurpleBrown_WebsiteFrames_work_30b430cf-a04e-4d17-b985-3b79142f496b.jpg?v=1642532424);
+    background-position: center;
+    background-size: cover;
+    transition: all ease 0.5s;
+}
+.p2-right:hover .p2r-img{
+    transform: scale(1.1);
+}
+/* =================================================== */
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #FF5400;
+    cursor: none;
+}
+.p3-top{
+    width: 100%;
+    height: 20vh;
+    font: 400 4vmax "Right Grotesk";
+    background-color: #FF5400;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+   transition: all linear 1s;
+}
+.p3-bottom{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.p3b-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p3l-image2{
+    width: 100%;
+    height: 90%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0521/2871/0837/files/Stars2_Blue.gif?v=1642015825);
+    background-position: center;
+    background-size: cover;
+}
+
+.p3l-image{
+    width: 70%;
+    height: 90%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0521/2871/0837/files/Black-Star_JadePurpleBrown.jpg?v=1675717733&width=2048);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.p3b-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.p3br-img{
+    position: relative;
+    width: 70%;
+    height: 90%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0521/2871/0837/files/platforms_2_large.jpg?v=1642014789);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.p3br-img img{
+    position: absolute;
+    height: 15vmax;
+    right: -24%;
+    top: -15%;
+}
+
+.cursor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    z-index: 99;
+    transition: all linear 0.1s;
+    mix-blend-mode: difference;
+}
+/* =========================================== */
+.page4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.p4-left{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.p4l-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0521/2871/0837/files/JadePurpleBrown_WebsiteFrames_shop_a01af80a-b051-450a-b5c6-7ed7da096798.jpg?v=1642530209);
+    background-position: center;
+    background-size: cover;
+    transition: all linear 1s;
+    cursor: pointer;
+}
+.p4-left:hover .p4l-img{
+    transform: scale(1.1);
+}
+.p4-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCE5CF;
+    cursor: pointer;
+}
+.p4-right h1{
+    font: 600 170px "right grotesk";
+    line-height: 130px;
+    text-align: center;
+    color: #FC8500;
+    margin-bottom: 3vmax;
+    transition: all ease 0.5s;
+}
+.p4-right h3{
+    font: 400 1.8vmax "right grotesk";
+    color: #FC8500;
+}
+.p4-right:hover h1{
+    color: #FF5400;
+}
+.p4-right:hover h3{
+    color: #FF5400;
+}
+/* ============================================ */
+.page5{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page5 input{
+    width: 50%;
+    height: 2vmax;
+    font: 400 1.5vmax "Roboto";
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: black; margin-right: 1vmax;
+}
+.page5 button{
+    padding: 1vmax 1.5vmax;
+    border: 2px solid white;
+    border-radius: 50px;
+    font:600 1.5vmax "roboto" ;
+    background-color: black;
+    color: white;
+}
+
+/* ================================================ */
+.page6{
+    width: 100%;
+    height: 100%;
+    background-color: wheat;
+    display: flex;
+}
+.p6-left{
+    width: 50%;
+    height: 100%;
+    background-color: #FCE5CF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.p6-left h2{
+    font: 400 2.3vmax "Montserrat";
+    margin-bottom: 2vmax;
+    text-align: center;
+}
+.p6-left button{
+    padding: 0.8vmax 1.5vmax;
+    font: 600 1vmax "montserrat";
+    background-color: #F7B0E0;
+    border-radius: 100px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.p6-left button:hover{
+    background-color: #FCE5CF;
+}
+#one{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0%;
+    left:10%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;  */
+   animation: rotate 2s linear infinite both;
+}
+@keyframes rotate{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
+}
+.p6-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.p6r-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.shopify.com/s/files/1/0521/2871/0837/files/JadePurpleBrown_WebsiteFrames_info_865e79a5-6068-4d77-bebb-58ecf871110e.jpg?v=1642531530);
+    background-size: cover;
+    background-position: center;
+    transition: all ease 1s;
+    cursor: pointer;
+}
+.p6-right:hover .p6r-img{
+    transform: scale(1.1);
+}
+/* ============================================ */
+.page7{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #FF5400;
+}
+.p7-left{
+    height: 20vh;
+    width: 20%;
+}
+.p7-center{
+    padding-top: 2vmax;
+    
+}
+.p7-center ul{
+    list-style: none;
+}
+.p7-center li{
+    font: 400 1vmax "montserrat";
+}
+.p7-right{
+    padding-top: 2vmax;
+}
+.p7-right ul{
+    list-style: none;
+}
+.p7-right li{
+    font: 400 1vmax "montserrat";
+}
+/* ============================================== */
+.footer{
+    width: 100%;
+    height: 7vh;
+    padding: 0 5vmax;
+    font: 100 0.9vmax "Montserrat";
+    background-color: #F7B0E0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
