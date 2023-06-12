@@ -22,7 +22,7 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fade 1s infinite;
+    /* animation: fade 1s infinite; */
     
 }
 @keyframes fade{

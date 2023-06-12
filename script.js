@@ -1,4 +1,4 @@
-var page3 = document.querySelector(".page3");
+   var page3 = document.querySelector(".page3");
 var crsr = document.querySelector(".cursor");
 var h1 = document.querySelector("#play")
 
