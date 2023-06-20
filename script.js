@@ -1,4 +1,4 @@
-gsap.from("#jade" , {
+gsap.from("#jade", {
     x :10,
     duration :1,
     opactiy :0,
@@ -197,7 +197,6 @@ gsap.from(".page6",{
         end : "top 20%",
         scrub : 3,
     }
-    
 })
 
 
