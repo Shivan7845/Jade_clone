@@ -433,7 +433,7 @@ html,body{
 @media (max-width:600px){
 
 .main{
-        overflow-y: hidden;
+       overflow-y: hidden !important;
     }
  .page1{
     padding: 0  1.5vmax;
