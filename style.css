@@ -431,6 +431,10 @@ html,body{
 /* =============Responsive=================================== */
 
 @media (max-width:600px){
+
+.main{
+        overflow-y: hidden;
+    }
  .page1{
     padding: 0  1.5vmax;
  }
