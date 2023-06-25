@@ -1,3 +1,8 @@
+var scrollTop = function() {
+    window.scrollTo(0, 0);
+};
+scrollTop()
+// =======================gsap============================
 gsap.from("#jade", {
     x :10,
     duration :1,
